@@ -32,7 +32,7 @@
 					<br><br>
 				</li>
 				<hr style="border: none; height: 1px; background-color: rgb(244, 221, 224);"><br>
-				<li><strong style="color: #441869;"><u>Question 2</u>: </b>What types of houses have been targeted for speculation by different types of corporate sellers (ie. banks, LLCs, LLPs, trust-like entities)?</strong>
+				<li><strong style="color: #441869;"><u>Question 2</u>: </b>What types of houses have been targeted for speculation by different types of corporate buyers (ie. banks, LLCs, LLPs, trust-like entities)?</strong>
 					<br><br>
 					<b>Motivation:</b>  The article <i>"When Private Equity Becomes Your Landlord"</i> highlights private equity firms as the most aggressive corporate speculators, noting that the most aggressive funds aim for profits of 20% or more on investors’ contributions, minus management fees. In contrast, publicly traded real estate trusts yield a dividend of just 4.33%. Given this significant difference in profit expectations, I am curious whether there is also a meaningful difference in the types of homes targeted for speculation by these corporations. This question is important because different types of homes are purchased by people from different wealth brackets and socioeconomic groups, meaning corporate speculation could disproportionately impact certain communities.
 					<br><br>
@@ -162,8 +162,14 @@
 			<br>
 			<br>
 			<hr style="border: none; height: 1px; background-color: rgb(244, 221, 224);"><br>
-			<b>Our second question</b> concerns the types of houses targeted for speculation by different types of corporate sellers. 
-			We will use the following dataset for our analysis:
+			<b>Our second question</b> concerns the types of houses targeted for speculation by different types of corporate buyers. 
+			We will use the EDA Residential dataset for our analysis because for each transaction,
+			it included information about the type of corporate buyer and the type of property purchased. It is important
+			to note that while carefully reading the metadata section of the dataset and taking a high-level look at the 
+			dataset values themselves, we noticed the following: there is not an equal amount of information available
+			for each residence. There are varying numbers of entries in the dataset that are associated with each residence
+			and each entry corresponds to different years. This means that in the forthcoming analysis, we took effort to 
+			carefully consider how to aggregate our data to ensure that we are not misrepresenting it.
 
 			<br><br>
 			Again, we begin with sanity checks and summary statistics about our dataset.
@@ -228,7 +234,7 @@
 				was outside of the single-year scope of our census dataset.
 			</p>
 
-			<p> Second, we investigated the types of homes targeted for speculation by different types of corporate sellers.</p>
+			<p> Second, we investigated the types of homes targeted for speculation by different types of corporate buyers.</p>
 			<p> Third, we explored how the prevalence of corporate property ownership in student-dense neighborhoods compared with other areas.</p>
 			<p> Fourth, we analyzed how vacancy rates in Boston differ across wealth strata.</p>
 			<p>In conclusion, this work analyzes how profit-driven real estate transforms communities in the Greater Boston area. Thank you for reading!</p>
