@@ -112,11 +112,25 @@
 				<img src="A2_4.png" alt="" />
 				<figcaption>
 				Pie charts to demonstrate the demographic breakdown of Fenway in 2004, 2014, and 2024. The pie charts that we created reveal a strange finding: all of the percentages remained consistent across years.
-				This was a red flag that our analysis may be incorrect. After consulting the dataset, we noticed the root of our error: the demographic information
-				in our dataset was for the year 2020.
+				This raised a red flag that our analysis may be incorrect. After consulting the metadata section of the dataset, we noticed the root of our error: the demographic information
+				in our dataset was for the year 2020, despite the fact that this demographic information was included separately for each year.
 				<br><br>This information was sourced from the following dataset: <i>Change Over Time in Corporate Ownership and Owner Occupancy Rates in Boston Neighborhoods with Census</i>.
 				</figcaption>
 			</figure>
+
+			As stated in the figure caption, this analysis revealed an incorrect assumption that we made. 
+			Each pie chart (for 2004, 2014, and 2024) was identical, suggesting the very unlikely 
+			possibility that demographic breakdown of Fenway remained consistent across the years. 
+			This raised a red flag that our analysis may be incorrect. After consulting the metadata 
+			section of the dataset, we noticed the root of our error: the demographic information in 
+			our dataset was for the year 2020, despite the fact that this demographic information was 
+			included separately for each year. This error highlights the importance of carefully 
+			reading the metadata section of a dataset before proceeding with analysis.
+			<br><br>
+			As a result, we were unable to answer our original question about how the demographic breakdown of Fenway
+			changed over the years. However, we were able to pivot our analysis and ask a different question:
+			in the year of 2020, how did the demographic breakdown of Fenway compare to other areas in Greater Boston?
+
 
 			<figure>
 				<img src="IMAGE_FILENAME" alt="" />
