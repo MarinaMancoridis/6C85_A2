@@ -22,7 +22,7 @@
 
 			<h3>Overall Analysis Questions</h3>
 			<ol>
-				<li><strong style="color: #6e28a8;"><u>Question 1</u>: In Somerville, how has the percentage of residential properties that were purchased by a corporate investor changed from 2004 to 2018? How does this rate compare with other areas in Greater Boston?</strong>
+				<li><strong style="color: #6e28a8;"><u>Question 1</u>: In Somerville, how has the percentage of residential properties that were purchased by a corporate investor changed from 2004to 2024? How does this rate compare with other areas in Greater Boston?</strong>
 					<br><br>
 					<b>Motivation:</b> My long-time family friends have lived in Somerville their entire lives, and we visited them every year for Thanksgiving. In 2016, they were forced to move from their single-family home to a condo due to rising rent prices. They believe these increases were driven by profit-seeking corporations that purchased nearby properties, contributing to rising housing costs. The move was particularly devastating for them, as their home held deep sentimental value—it was where they had raised their children.
 					<br><br>
@@ -56,12 +56,22 @@
 				</li>
 				<hr style="border: none; height: 1px; background-color: rgb(244, 221, 224);">
 				<br>
-				<b><u>Summary</u>:</b> We will examine four facets of Boston’s housing market by exploring different aspects of our dataset. We will track Somerville’s corporate investment in residential properties from 2004 to 2018 (Question 1), investigate which home types corporate speculators target (Question 2), explore how corporate ownership shapes student-dense neighborhoods (Question 3), and analyze vacancy rates across different wealth levels (Question 4). Drawing on four diverse data sources and two personal experiences, we will begin to reveal how profit-driven real estate transforms communities.
+				<b><u>Summary</u>:</b> We will examine four facets of Boston’s housing market by exploring different aspects of our dataset. We will track Somerville’s corporate investment in residential properties from 2004 to 2024 (Question 1), investigate which home types corporate speculators target (Question 2), explore how corporate ownership shapes student-dense neighborhoods (Question 3), and analyze vacancy rates across different wealth levels (Question 4). Drawing on four diverse data sources and two personal experiences, we will begin to reveal how profit-driven real estate transforms communities.
 			</ol>
 		</section>
 
 		<section>
 			<h2>Discoveries & Insights</h2>
+			Our first question concerns the percentage of residential properties that were purchased by corporate 
+			investors in Somerville (from 2004 to 2024). We will use the following dataset for our analysis: Change Over 
+			Time in Corporate Ownership and Owner Occupancy Rates in Boston Neighborhoods with Census. This dataset
+			contains information on the percentage of residential properties that were purchased by corporate investors, by year and neighborhood.
+			It is important to note a flag raised in the metadata section of the dataset: they determine corporate ownership
+			based on keyphrase matching on the 'owner name' field. This introduces some level of "fuzziness" because of potential
+			misclassifications (ie. a residential owner files under a corporation or other misclassifications).
+			<br><br>
+			Before grouping our data by neighborhood, we will begin with a sanity check. Is it true that (average) corporate ownership has increased
+			from 2004?
 
 			<figure>
 				<img src="IMAGE_FILENAME" alt="" />
