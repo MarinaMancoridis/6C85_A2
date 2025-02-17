@@ -280,8 +280,13 @@
 			<br>
 			<hr style="border: none; height: 1px; background-color: rgb(244, 221, 224);"><br>
 			<b>Our third question</b> concerns how vacancy rates in Boston differ across wealth strata. We will use the EDA Residential dataset for our analysis because it contains the most information about each buyer.
-			This question is difficult to directly answer. As mentioned in the Boston Globe article
-			
+			This question is difficult to directly answer. As mentioned in the Boston Globe article, the vacancy rates in Boston are not directly available. However, we can still explore this question by considering 
+			variables that may serve as proxies (educated guesses) for vacandy rates. For example, if there is an individual with many properties associated with their name, it is likely that they are not living in all of them.
+
+			<br><br>
+			To begin to answer this question, we start with univariate analyses. In particular, we are interested in the distribution of the number of properties associated with each individual, non-corporate buyer. We take the 
+			same approach to identifying non-corporate buyers as indicated in the metadata section of the <i>Census and Corporate Ownership and Occupancy Over Time</i> dataset: look for sellers that don't fall into the categories 
+			associated with corporate buyers (ie. LLC, LLP, etc.). We note, as is noted in the metadata section of the dataset, that this approach is not perfect and may misclassify some non-corporate buyers as corporate buyers.
 
 			<figure>
 				<img src="IMAGE_FILENAME" alt="" />
