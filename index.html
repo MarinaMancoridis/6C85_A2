@@ -201,7 +201,7 @@
 				</figcaption>
 			</figure>
 
-			Our heatmap reveals that most of the data is concentrated in four regions of Boston (the North End, Beacon Hill, Back Bay, and the South End). 
+			After we omitted the faulty datapoints from our analysis, our heatmap reveals that most of the remaining data is concentrated in four regions of Boston (the North End, Beacon Hill, Back Bay, and the South End). 
 			We also see that the data is concentrated in Boston itself, rather than surrounding cities like 
 			Cambridge or Somerville. 
 			
@@ -319,7 +319,7 @@
 		<section>
 			<h2>Summary</h2>
 
-			<p>We examined four facets of Boston’s housing market by exploring different aspects of our dataset.</p>
+			<p>We examined three facets of Boston’s housing market by exploring different aspects of our dataset.</p>
 			<p>First, we examined the trajectory of corporate ownership in Fenway from 2004 to 2024. Our analysis 
 				confirmed that corporate ownership (on average) across Boston increased steadily—from an average 
 				of 5.48% in 2004 to 25.29% in 2024—while Fenway consistently exhibited significantly higher 
@@ -332,9 +332,14 @@
 				was outside of the single-year scope of our census dataset.
 			</p>
 
-			<p> Second, we investigated the types of homes targeted for speculation by different types of corporate buyers.</p>
-			<p> Third, we explored how the prevalence of corporate property ownership in student-dense neighborhoods compared with other areas.</p>
-			<p> Fourth, we analyzed how vacancy rates in Boston differ across wealth strata.</p>
+			<p> Second, we investigated the types of homes targeted for speculation by different types of corporate buyers.
+				First, we filtered out data entries that were associated with faulty values (latitude and longitude values of 0.00).
+				We used a heatmap to confirm that the remaining data is situated within Boston. In particular, the data is concentrated
+				in the North End, Beacon Hill, Back Bay, and the South End. Across nearly all buyer types, condominiums
+				overwhelmingly dominate the market. LLC buyers exhibit the greatest diversity in property types, indicating a broader
+				investment strategy than other types of buyers. We conducted a qualitative analysis of the highest-valued purchases by non-Small LLCs,
+				finding that such purchases corresponded to skyscrapers whose appearances remained largely unchanged over the years. </p>
+			<p> Third, we analyzed how vacancy rates in Boston differ across wealth strata.</p>
 			<p>In conclusion, this work analyzes how profit-driven real estate transforms communities in the Greater Boston area. Thank you for reading!</p>
 	
 		</section>
